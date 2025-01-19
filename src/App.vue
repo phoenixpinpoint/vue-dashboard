@@ -3,19 +3,23 @@
 		<MenuBar />
 		<div class="flex grow bg-slate-200">
 			<SideNav />
-			<h1 class="text-white grow">App</h1>
+      <div class="mr-4 my-4">
+        <DataCard />
+      </div>
 		</div>
 	</div>
 </template>
 <script>
 import MenuBar from './components/MenuBar.vue'
 import SideNav from './components/SideNav.vue'
+import DataCard from './components/DataCard.vue'
 
 export default {
   name: 'App',
   components: {
-	MenuBar,
-	SideNav
+    MenuBar,
+    SideNav,
+    DataCard
   }
 }
 </script>
