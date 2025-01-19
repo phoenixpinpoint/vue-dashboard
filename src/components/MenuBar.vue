@@ -1,16 +1,16 @@
 <template>
-	<div class="h-16 text-white flex menu-bar justify-end">
+	<div class="bg-slate-900 h-16 text-white flex menu-bar justify-end">
 		<div class="menu-bar-branding content-center mr-auto pl-16">
 			Brand
 		</div>
 		<div class="menu-bar-item">
-			Le Item 1
+			<i class="pi pi-search"></i>
 		</div>
 		<div class="menu-bar-item">
-			Le Item 2
+			<i class="pi pi-cog"></i>
 		</div>
 		<div class="menu-bar-item">
-			<airplay-icon size="25" class="custom-class"></airplay-icon>
+			<i class="pi pi-question-circle"></i>
 		</div>
 		<div class="menu-bar-item">
 			<button class="bg-red-800 hover:bg-red-400 text-white p-2 rounded-lg">Le Button</button>
@@ -19,10 +19,9 @@
 </template>
 
 <script>
-import { AirplayIcon } from 'vue-feather-icons'
+import 'primeicons/primeicons.css'
 export default {
 	components: {
-		AirplayIcon
 	}
 }
 </script>
