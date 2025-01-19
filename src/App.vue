@@ -3,8 +3,13 @@
 		<MenuBar />
 		<div class="flex grow bg-slate-200">
 			<SideNav />
-      <div class="mr-4 my-4">
-        <DataCard />
+      <div class="flow">
+        <div class="mr-4 my-4 space-x-4 flex">
+          <DataCard />
+          <DataCard />
+          <DataCard />
+          <DataCard />
+        </div>
       </div>
 		</div>
 	</div>
