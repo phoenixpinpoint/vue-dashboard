@@ -3,7 +3,8 @@
 		<MenuBar />
 		<div class="flex flex-wrap justify-center content-center text-center">
 			<SideGutter />
-			<h1 class="text-white w-10/12">App</h1>
+			<h1 class="text-white w-2/3">App</h1>
+			<SideGutter />
 		</div>
 	</div>
 </template>
