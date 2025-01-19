@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.menu-bar-item {
+		@apply font-bold text-lg content-center hover:cursor-pointer hover:text-blue-500 ml-12 last:mr-16;
+	}
+}
