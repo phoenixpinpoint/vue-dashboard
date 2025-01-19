@@ -1,9 +1,9 @@
 <template>
 	<div class="h-screen w-screen flex flex-col">
 		<MenuBar />
-		<div class="flex grow">
+		<div class="flex grow bg-slate-200">
 			<SideNav />
-			<h1 class="bg-slate-200 text-white grow">App</h1>
+			<h1 class="text-white grow">App</h1>
 		</div>
 	</div>
 </template>
