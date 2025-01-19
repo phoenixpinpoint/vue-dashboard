@@ -1,7 +1,7 @@
 <template>
 	<div class="w-14 h-14 hover:w-1/6">
 		<h1> Menu </h1>
-		<SideNavItem />
+		<SideNavItem item-icon="pa pa-th-large" item-label="Dashboard" />
 	</div>
 </template>
 
