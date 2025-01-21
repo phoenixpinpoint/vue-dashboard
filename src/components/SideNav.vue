@@ -5,7 +5,7 @@
     <SideNavItem item-icon="pi pi-briefcase text-xl" item-label="Cases"/>
     <SideNavItem item-icon="pi pi-calendar text-xl" item-label="Calendar"/>
     <SideNavItem item-icon="pi pi-users text-xl" item-label="Clients"/>
-    <SideNavItem item-icon="pi pi-folder" item-label="Fillings"/>
+    <SideNavItem item-icon="pi pi-folder text-xl" item-label="Fillings"/>
     <SideNavItem item-icon="pi pi-dollar text-xl" item-label="Billables"/>
     <SideNavItem item-icon="pi pi-id-card text-xl" item-label="Personnel"/>
   </div>
