@@ -4,7 +4,7 @@
 		<div class="flex grow bg-slate-200">
 			<SideNav />
       <div class="flow">
-        <AlertMessage alert-type="error" alert-message="Le Test"/>
+        <AlertMessage v-show="appAlert" :alert-message="appAlert" alert-type="error"/>
         <div class="mr-4 my-4 space-x-4 flex">
           <DataCard />
           <DataCard />
@@ -22,13 +22,18 @@ import AlertMessage from './components/AlertMessage.vue'
 import DataCard from './components/DataCard.vue'
 
 export default {
+  data() {
+    return {
+      appAlert: undefined
+    }
+  },
   name: 'App',
   components: {
     MenuBar,
     SideNav,
     DataCard,
     AlertMessage
-  }
+  },
 }
 </script>
 

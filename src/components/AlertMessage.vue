@@ -1,7 +1,7 @@
 <template>
-  <div class="alert-message bg-red-700">
+  <div class="alert-message" :class="classObject">
     <div class="flex">
-      <div v-if="alertType === 'error'" class="pi pi-times-circle text-xl">
+      <div :class="alertTypeIcon">
       </div>
       <div class="ml-4">
         {{alertMessage}}
@@ -19,7 +19,26 @@
     props: [
       'alertType',
       'alertMessage'
-    ]
+    ],
+    computed: {
+      classObject() {
+        return {
+          "bg-red-700": this.alertType === "error",
+          "bg-green-700": this.alertType === "success",
+          "bg-amber-700": this.alertType === "warning",
+          "bg-cyan-700": !this.alertType
+        }
+      },
+      alertTypeIcon() {
+        return {
+          "pi pi-times-circle text-xl": this.alertType === "error",
+          "pi pi-check-circle text-xl": this.alertType === "success",
+          "pi pi-exclamation-circle text-xl": this.alertType === "warning",
+          "pi pi-info-circle text-xl": !this.alertType
+        }
+      }
+    }
+
   }
 </script>
 
